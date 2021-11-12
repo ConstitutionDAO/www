@@ -1,4 +1,67 @@
+@font-face {
+    font-family: GTAmerica;
+    src: url("./assets/fonts/GT-America-Standard-Regular.ttf");
+}
+
+@font-face {
+    font-family: GTAmericaBold;
+    src: url("./assets/fonts/GT-America-Standard-Bold.ttf");
+}
+
+@font-face {
+    font-family: GTAmericaBoldItalic;
+    src: url("./assets/fonts/GT-America-Standard-Bold-Italic.ttf");
+}
+  
+  
 body {
     background: linear-gradient(180deg, #3E3E3E 0%, #161616 100%);
     color: white;
+    font-family: GTAmerica;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    width: 100%;
 }
+
+.title {
+    font-family: GTAmericaBoldItalic;
+    font-size: 24px;
+    margin: 30px;
+}
+
+.pyramid-wrapper {
+    width: 300px;
+    position: relative;
+}
+
+.pyramid {
+    width: 100%;
+}
+
+.nick-cage-pillow {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50px;
+    top: 59px;
+
+    animation: rotation 3s infinite linear;
+}
+
+.rotate {
+    animation: rotation 3s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
