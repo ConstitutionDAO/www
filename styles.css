@@ -125,6 +125,10 @@ a {
   cursor: pointer;
 }
 
+.video-credit {
+  margin: 0;
+}
+
 .content {
   text-align: left;
   /* align-self: flex-start; */
@@ -138,6 +142,10 @@ h1 {
 
 .js-tilt-glare {
   border-radius: 50%;
+}
+
+video {
+  margin-top: 2rem;
 }
 
 .movie-poster {
