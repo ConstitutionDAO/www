@@ -67,8 +67,7 @@ body {
     }
   }
 
-.discord-link {
-    margin-top: 40px;
+.cta-link {
   border-radius: 10px;
   font-size: 20px;
   font-family: GTAmerica;
@@ -83,8 +82,14 @@ body {
   box-shadow: 0px 4px 12px rgb(0 0 0 / 25%);
 }
 
-.discord-link:hover {
-    transform: scale(1.1);
-    transition-duration: 0.2s;
-    cursor: pointer;
-  }
+.cta-link:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+a {
+  margin-top: 20px;
+  color: white;
+}
+
