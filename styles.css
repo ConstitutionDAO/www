@@ -125,6 +125,10 @@ a {
   cursor: pointer;
 }
 
+.video-credit {
+  margin: 0;
+}
+
 .content {
   text-align: left;
   /* align-self: flex-start; */
