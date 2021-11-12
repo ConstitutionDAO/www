@@ -28,6 +28,12 @@ body {
     width: 100%;
 }
 
+@media only screen and (max-width: 800px) {
+  .web-only {
+    display: none;
+  }
+}
+
 .title {
     font-family: GTAmericaBoldItalic;
     font-size: 24px;
@@ -104,5 +110,10 @@ a {
 
 h1 {
   font-family: 'Ballet';
+}
+
+.movie-poster {
+  width: 100%;
+  margin-top: 40px;
 }
 
