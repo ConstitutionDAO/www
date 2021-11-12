@@ -112,6 +112,10 @@ h1 {
   font-family: 'Ballet';
 }
 
+.js-tilt-glare {
+  border-radius: 50%;
+}
+
 .movie-poster {
   width: 100%;
   margin-top: 40px;
