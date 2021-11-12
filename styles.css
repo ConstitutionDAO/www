@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+  
 @font-face {
     font-family: GTAmerica;
     src: url("./assets/fonts/GT-America-Standard-Regular.ttf");
@@ -12,8 +14,8 @@
     font-family: GTAmericaBoldItalic;
     src: url("./assets/fonts/GT-America-Standard-Bold-Italic.ttf");
 }
-  
-  
+
+
 body {
     background: linear-gradient(180deg, #3E3E3E 0%, #161616 100%);
     color: white;
@@ -68,6 +70,7 @@ body {
   }
 
 .cta-link {
+  margin-top: 20px;
   border-radius: 10px;
   font-size: 20px;
   font-family: GTAmerica;
@@ -89,7 +92,17 @@ body {
 }
 
 a {
-  margin-top: 20px;
   color: white;
+}
+
+.content {
+  text-align: left;
+  /* align-self: flex-start; */
+  padding: 30px;
+  width: 400px;
+}
+
+h1 {
+  font-family: 'Ballet';
 }
 
