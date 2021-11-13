@@ -26,12 +26,6 @@ body {
     align-items: center;
 }
 
-@media only screen and (max-width: 800px) {
-  .web-only {
-    display: none;
-  }
-}
-
 .title {
     font-family: GTAmericaBoldItalic;
     font-size: 24px;
@@ -153,3 +147,29 @@ video {
   margin-top: 40px;
 }
 
+.progress {
+  margin-top: 1rem;
+  width: 40%;
+  height: 1.5rem;
+  border-radius: 9px;
+  box-shadow: inset 0 0 6px 0px #000000b8;
+  background-color: white;
+  overflow: none;
+}
+
+.bar {
+  width: 0%;
+  height: 1.5rem;
+  border-radius: 9px;
+  background: linear-gradient(135deg, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+}
+
+@media only screen and (max-width: 800px) {
+  .web-only {
+    display: none;
+  }
+
+  .progress {
+    width: 70%;
+  }
+}
