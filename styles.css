@@ -162,7 +162,7 @@ video {
   width: 0%;
   height: 1.5rem;
   border-radius: 9px;
-  background: linear-gradient(135deg, red, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+  background: linear-gradient(135deg, red, orange , yellow, green, cyan, blue, violet);
 }
 
 @media only screen and (max-width: 800px) {
