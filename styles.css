@@ -6,8 +6,9 @@
 }
 
 @font-face {
-    font-family: GTAmericaBold;
+    font-family: GTAmerica;
     src: url("./assets/fonts/GT-America-Standard-Bold.ttf");
+    font-weight: bold;
 }
 
 @font-face {
