@@ -132,9 +132,8 @@ a {
 
 .content {
   text-align: left;
-  /* align-self: flex-start; */
   padding: 30px;
-  width: 400px;
+  max-width: 800px;
 }
 
 h1 {
