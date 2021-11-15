@@ -12,6 +12,6 @@ function numberWithCommas(x) {
 (async function () {
   const raised = await fetchData()
 
-  document.getElementById("usd").textContent = `$${numberWithCommas(raised.dollars)}`;
+  document.getElementById("usd").textContent = `${numberWithCommas(raised.dollars)}`;
   document.getElementById("eth").textContent = `${raised.eth}`;
 })();

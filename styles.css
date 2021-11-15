@@ -151,6 +151,10 @@ a {
   text-shadow: 0 0 9px #0000008f;
 }
 
+.dollars::before {
+  content: '$';
+}
+
 .eth {
   color: #27c7d9;
   font-size: 3em;
