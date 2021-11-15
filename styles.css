@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
-  
+
 @font-face {
     font-family: GTAmerica;
     src: url("./assets/fonts/GT-America-Standard-Regular.ttf");
@@ -45,10 +45,10 @@ body {
 
 .nick-cage-pillow {
     position: absolute;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 50px;
     top: 59px;
 
@@ -75,9 +75,14 @@ body {
   font-family: GTAmerica;
   color: #fff;
   border: 1px solid #fff;
-  padding: 20px 32px;
+  padding: 20px 8px;
   text-decoration: none;
   font-weight: bold;
+}
+
+.main-cta {
+  background: #635bff;
+  border: 0;
 }
 
 .button-row {
@@ -144,32 +149,38 @@ a {
   font-family: 'Ballet';
 } */
 
+h2 {
+  padding-top: 1rem;
+}
+
 .dollars {
   font-size: 6em;
-  margin: 0rem 0 1rem 0;
-  color: #23c556;
-  text-shadow: 0 0 9px #0000008f;
+  margin: 0;
+  color: #00FF6F;
+  /* text-shadow: 0 0 9px #0000008f; */
 }
 
 .eth {
-  color: #27c7d9;
+  color: #00d4ff;
   font-size: 3em;
   margin: 0;
   margin-top: -1.25rem;
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
 }
 
-.eth::after {
-  content: 'ETH';
+.eth::before {
+  content: 'Ξ';
   margin-left: .5rem;
-  font-size: .25em;
+  margin-right: .5rem;
+  font-size: 1em;
   text-shadow: none;
+  font-family: Arial;
 }
 
 .raised {
   margin: 0;
   margin-top: 2rem;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .js-tilt-glare {
@@ -203,12 +214,31 @@ video {
   background: linear-gradient(135deg, red, orange , yellow, green, cyan, blue, violet);
 }
 
+/* FAQ Section */
+
+#FAQ {
+  padding-top: 4rem;
+}
+
+/* Video */
+
+#video {
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+/* Footer */
+
+#footer {
+  padding-bottom: 4rem;
+}
+
 @media only screen and (max-width: 800px) {
   .web-only {
     display: none;
   }
 
   .dollars {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
 }
