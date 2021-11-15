@@ -150,7 +150,7 @@ a {
 } */
 
 h2 {
-  padding-top: 16pt; /* Changed */
+  padding-top: 1rem;
 }
 
 .dollars {
@@ -217,20 +217,20 @@ video {
 /* FAQ Section */
 
 #FAQ {
-  padding-top: 40pt;
+  padding-top: 4rem;
 }
 
 /* Video */
 
 #video {
-  padding-top: 48pt;
-  margin-bottom: 48pt;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 /* Footer */
 
 #footer {
-  padding-bottom: 48pt;
+  padding-bottom: 4rem;
 }
 
 @media only screen and (max-width: 800px) {
