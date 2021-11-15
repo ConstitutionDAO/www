@@ -130,8 +130,36 @@ a {
   width: 400px;
 }
 
-h1 {
+/* h1 {
   font-family: 'Ballet';
+} */
+
+.dollars {
+  font-size: 6em;
+  margin: 0rem 0 1rem 0;
+  color: #23c556;
+  text-shadow: 0 0 9px #0000008f;
+}
+
+.eth {
+  color: #27c7d9;
+  font-size: 3em;
+  margin: 0;
+  margin-top: -1.25rem;
+  margin-bottom: 0rem;
+}
+
+.eth::after {
+  content: 'ETH';
+  margin-left: .5rem;
+  font-size: .25em;
+  text-shadow: none;
+}
+
+.raised {
+  margin: 0;
+  margin-top: 2rem;
+  font-size: 3em;
 }
 
 .js-tilt-glare {
