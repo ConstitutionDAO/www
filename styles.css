@@ -34,10 +34,6 @@ body {
     text-align: center;
 }
 
-#scroll-scroll {
-  font-size: 140px;
-}
-
 .cta-link {
   margin-top: 20px;
   border-radius: 10px;
@@ -203,6 +199,13 @@ video {
   padding-bottom: 4rem;
 }
 
+.scroll-scroll {
+  font-weight: bold;
+  font-size: 10rem;
+  margin: 1rem 0 1rem 0;
+
+}
+
 @media only screen and (max-width: 800px) {
   .web-only {
     display: none;
@@ -210,5 +213,9 @@ video {
 
   .dollars {
     font-size: 3.25rem;
+  }
+
+  .scroll-scroll {
+    font-size: 6rem;
   }
 }
