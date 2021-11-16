@@ -34,40 +34,6 @@ body {
     text-align: center;
 }
 
-.pyramid-wrapper {
-    width: 300px;
-    position: relative;
-}
-
-.pyramid {
-    width: 100%;
-}
-
-.nick-cage-pillow {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50px;
-    top: 59px;
-
-    animation: rotation 3s infinite linear;
-}
-
-.rotate {
-    animation: rotation 3s infinite linear;
-  }
-
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-
 .cta-link {
   margin-top: 20px;
   border-radius: 10px;
@@ -259,6 +225,13 @@ video {
   padding-bottom: 4rem;
 }
 
+.scroll-scroll {
+  font-weight: bold;
+  font-size: 10rem;
+  margin: 1rem 0 1rem 0;
+
+}
+
 @media only screen and (max-width: 800px) {
   .web-only {
     display: none;
@@ -268,7 +241,14 @@ video {
     font-size: 3.25rem;
   }
 
+
   .progress {
     width: 70%;
   }
 }
+
+  .scroll-scroll {
+    font-size: 6rem;
+  }
+}
+
