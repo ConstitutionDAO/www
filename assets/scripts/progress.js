@@ -17,7 +17,7 @@ function numberWithCommas(x) {
 
   document.getElementById("bar").style.width = `${percentage}%`;
 
-  document.getElementById("raisedUsd").textContent = numberWithCommas(dollars);
+  document.getElementById("raisedUsd").textContent = numberWithCommas(parseInt(dollars).toFixed(0));
   document.getElementById("targetUsd").textContent =
     numberWithCommas(targetUSD);
 
