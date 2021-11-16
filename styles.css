@@ -137,6 +137,56 @@ a {
   line-height: 1.5;
 }
 
+.team {
+  max-width: 72rem;
+  margin: auto;
+  width: 100%;
+}
+
+.team-group {
+  margin: 1rem 0 1rem 0;
+}
+
+.team-group > p {
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+}
+
+.team-people {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.person {
+  /* display: grid;
+  grid-template-columns: auto 1fr; */
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-color: #161616;
+  padding: 1rem;
+}
+
+.person > .info > h1 {
+  margin: 0;
+  margin-bottom: .25rem;
+}
+
+.person > .info > p {
+  margin: 0;
+}
+
+.person a {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+}
+
 /* h1 {
   font-family: 'Ballet';
 } */
@@ -276,5 +326,17 @@ video {
 
   .video {
     height: 16rem;
+  }
+
+  .team-people {
+    grid-template-columns: 1fr;
+  }
+  .person {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .person > .twitter {
+    width: 100%;
   }
 }
