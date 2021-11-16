@@ -212,6 +212,14 @@ video {
   transform: rotate(-4deg) scale(1.125);
 }
 
+.dollarDenom {
+  color: #197843;
+}
+
+.ethDenom {
+  color: #116E81;
+}
+
 .progress {
   margin-top: 1rem;
   width: 40%;
