@@ -261,6 +261,11 @@ video {
 
   .dollars {
     font-size: 3.25rem;
+    text-align: center;
+  }
+
+  .eth {
+    text-align: center;
   }
 
   .progress {
