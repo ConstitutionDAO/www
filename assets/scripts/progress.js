@@ -10,8 +10,22 @@ function numberWithCommas(x) {
 }
 
 (async function () {
-  const raised = await fetchData()
+  const { dollars, eth, ethUsdConversion } = await fetchData();
+  const targetUSD = 20_000_000;
 
-  document.getElementById("usd").textContent = `$${numberWithCommas(raised.dollars)}`;
-  document.getElementById("eth").textContent = `${raised.eth}`;
+  const percentage = (dollars / targetUSD) * 100;
+
+  document.getElementById("bar").style.width = `${percentage}%`;
+
+  document.getElementById("raisedUsd").textContent = numberWithCommas(dollars);
+  document.getElementById("targetUsd").textContent =
+    numberWithCommas(targetUSD);
+
+  document.getElementById("raisedEth").textContent = numberWithCommas(eth);
+
+  document.getElementById("targetEth").textContent = numberWithCommas(
+    (targetUSD / parseInt(ethUsdConversion)).toFixed(3)
+  );
+
+  document.getElementById("percent").textContent = `${percentage.toFixed(0)}%`
 })();

@@ -154,21 +154,23 @@ h2 {
 }
 
 .dollars {
-  font-size: 6em;
+  font-size: 3em;
   margin: 0;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
   color: #00FF6F;
   /* text-shadow: 0 0 9px #0000008f; */
 }
 
 .eth {
   color: #00d4ff;
-  font-size: 3em;
+  font-size: 2em;
   margin: 0;
   margin-top: -1.25rem;
   margin-bottom: 1rem;
 }
 
-.eth::before {
+.ethSymbol::before {
   content: 'Ξ';
   margin-left: .5rem;
   margin-right: .5rem;
@@ -196,10 +198,24 @@ video {
   margin-top: 40px;
 }
 
+.percent {
+  font-size: 6em;
+  margin: 0;
+  margin-top: 1rem;
+  
+  color: white;
+  text-shadow: 0 0 12px white;
+  transition: transform .25s;
+}
+
+.percent:hover {
+  transform: rotate(-4deg) scale(1.125);
+}
+
 .progress {
   margin-top: 1rem;
   width: 40%;
-  height: 1.5rem;
+  height: 3rem;
   border-radius: 9px;
   box-shadow: inset 0 0 6px 0px #000000b8;
   background-color: white;
@@ -209,10 +225,12 @@ video {
 .bar {
   transition: width 1s;
   width: 0%;
-  height: 1.5rem;
+  height: 3rem;
   border-radius: 9px;
-  background: linear-gradient(135deg, red, orange , yellow, green, cyan, blue, violet);
-}
+  background: #FF27C7;
+  background: -webkit-linear-gradient(top left, #FF27C7, #77CC06);
+  background: -moz-linear-gradient(top left, #FF27C7, #77CC06);
+  background: linear-gradient(to bottom right, #FF27C7, #77CC06);}
 
 /* FAQ Section */
 
@@ -240,5 +258,9 @@ video {
 
   .dollars {
     font-size: 3.25rem;
+  }
+
+  .progress {
+    width: 70%;
   }
 }
