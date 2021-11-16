@@ -1,37 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ballet&display=swap");
 
 @font-face {
-    font-family: GTAmerica;
-    src: url("./assets/fonts/GT-America-Standard-Regular.ttf");
+  font-family: GTAmerica;
+  src: url("./assets/fonts/GT-America-Standard-Regular.ttf");
 }
 
 @font-face {
-    font-family: GTAmerica;
-    src: url("./assets/fonts/GT-America-Standard-Bold.ttf");
-    font-weight: bold;
+  font-family: GTAmerica;
+  src: url("./assets/fonts/GT-America-Standard-Bold.ttf");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: GTAmericaBoldItalic;
-    src: url("./assets/fonts/GT-America-Standard-Bold-Italic.ttf");
+  font-family: GTAmericaBoldItalic;
+  src: url("./assets/fonts/GT-America-Standard-Bold-Italic.ttf");
 }
-
 
 body {
-    background: linear-gradient(180deg, #3E3E3E 0%, #161616 100%);
-    color: white;
-    font-family: GTAmerica;
+  background: linear-gradient(180deg, #3e3e3e 0%, #161616 100%);
+  color: white;
+  font-family: GTAmerica;
+  padding: 1rem;
+}
 
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+.center {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
 
 .title {
-    font-family: GTAmericaBoldItalic;
-    font-size: 24px;
-    margin: 30px;
-    text-align: center;
+  font-family: GTAmericaBoldItalic;
+  font-size: 24px;
+  margin: 30px;
+  text-align: center;
 }
 
 .cta-link {
@@ -84,7 +86,12 @@ a {
   border-radius: 10px;
   font-size: 1rem;
   font-family: GTAmerica;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), #3ca86d;
+  background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #3ca86d;
   color: #fff;
   border: none;
   align-self: center;
@@ -105,10 +112,29 @@ a {
   margin: 0;
 }
 
-.content {
-  text-align: left;
-  padding: 30px;
-  max-width: 800px;
+.faq {
+  max-width: 72rem;
+  margin: auto;
+  width: 100%;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.faq-grid h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.faq-grid > div {
+  padding: 1.5rem;
+  background-color: #161616;
+  border-radius: 8px;
+  line-height: 1.5;
 }
 
 /* h1 {
@@ -123,8 +149,8 @@ h2 {
   font-size: 3em;
   margin: 0;
   margin-top: 1rem;
-  margin-bottom: .5rem;
-  color: #00FF6F;
+  margin-bottom: 0.5rem;
+  color: #00ff6f;
   /* text-shadow: 0 0 9px #0000008f; */
 }
 
@@ -137,9 +163,9 @@ h2 {
 }
 
 .ethSymbol::before {
-  content: 'Ξ';
-  margin-left: .5rem;
-  margin-right: .5rem;
+  content: "Ξ";
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   font-size: 1em;
   text-shadow: none;
   font-family: Arial;
@@ -168,10 +194,10 @@ video {
   font-size: 6em;
   margin: 0;
   margin-top: 1rem;
-  
+
   color: white;
   text-shadow: 0 0 12px white;
-  transition: transform .25s;
+  transition: transform 0.25s;
 }
 
 .percent:hover {
@@ -183,7 +209,7 @@ video {
 }
 
 .ethDenom {
-  color: #116E81;
+  color: #116e81;
 }
 
 .progress {
@@ -202,34 +228,30 @@ video {
   height: 3rem;
   border-radius: 9px;
   background: #00d4ff;
-  background: -webkit-linear-gradient(top left, #00d4ff, #00FF6F);
-  background: -moz-linear-gradient(top left, #00d4ff, #00FF6F);
-  background: linear-gradient(to bottom right, #00d4ff, #00FF6F);}
-
-/* FAQ Section */
-
-#FAQ {
-  padding-top: 4rem;
+  background: -webkit-linear-gradient(top left, #00d4ff, #00ff6f);
+  background: -moz-linear-gradient(top left, #00d4ff, #00ff6f);
+  background: linear-gradient(to bottom right, #00d4ff, #00ff6f);
 }
 
 /* Video */
 
-#video {
-  padding-top: 4rem;
-  margin-bottom: 4rem;
+.video {
+  margin-top: 1rem;
+  width: 100%;
+  height: 32rem;
 }
 
 /* Footer */
 
-#footer {
-  padding-bottom: 4rem;
+.footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .scroll-scroll {
   font-weight: bold;
   font-size: 10rem;
   margin: 1rem 0 1rem 0;
-
 }
 
 @media only screen and (max-width: 800px) {
@@ -249,7 +271,15 @@ video {
   .progress {
     width: 70%;
   }
-    .scroll-scroll {
+  .scroll-scroll {
     font-size: 6rem;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .video {
+    height: 16rem;
   }
 }
