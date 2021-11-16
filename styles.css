@@ -227,10 +227,10 @@ video {
   width: 0%;
   height: 3rem;
   border-radius: 9px;
-  background: #FF27C7;
-  background: -webkit-linear-gradient(top left, #FF27C7, #77CC06);
-  background: -moz-linear-gradient(top left, #FF27C7, #77CC06);
-  background: linear-gradient(to bottom right, #FF27C7, #77CC06);}
+  background: #00d4ff;
+  background: -webkit-linear-gradient(top left, #00d4ff, #00FF6F);
+  background: -moz-linear-gradient(top left, #00d4ff, #00FF6F);
+  background: linear-gradient(to bottom right, #00d4ff, #00FF6F);}
 
 /* FAQ Section */
 
