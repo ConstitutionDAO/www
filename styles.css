@@ -116,6 +116,7 @@ a {
   max-width: 72rem;
   margin: auto;
   width: 100%;
+  padding-top:2rem;
 }
 
 .faq-grid {
@@ -145,6 +146,7 @@ a {
 
 .team-group {
   margin: 1rem 0 1rem 0;
+  padding-top: 2rem;
 }
 
 .team-group > p {
@@ -256,10 +258,14 @@ video {
 
 .dollarDenom {
   color: #197843;
+  font-family: 'GTAmerica';
+  font-weight:normal;
 }
 
 .ethDenom {
   color: #116e81;
+  font-family: 'GTAmerica';
+  font-weight:normal;
 }
 
 .progress {
@@ -300,7 +306,7 @@ video {
 
 .scroll-scroll {
   font-weight: bold;
-  font-size: 10rem;
+  font-size: 8rem;
   margin: 1rem 0 1rem 0;
 }
 
