@@ -11,7 +11,7 @@ function numberWithCommas(x) {
 
 (async function () {
   const { dollars, eth, ethUsdConversion } = await fetchData();
-  const targetUSD = 20_000_000;
+  const targetUSD = dollars > 20_000_000 ? 30_000_000 : 20_000_000;
 
   const percentage = (dollars / targetUSD) * 100;
 
