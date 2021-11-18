@@ -14,9 +14,23 @@ function numberWithCommas(x) {
   const fiveMillionUnits = dollars / 5_000_000
   const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000
 
-  const percentage = (dollars / targetUSD) * 100;
+  const percentage = ((dollars) / targetUSD) * 100;
 
-  document.getElementById("bar").style.width = `${percentage}%`;
+  let remaining = dollars;
+  let amountRaised = 0;
+  const barContainer = document.getElementById('barC');
+  for (let i = 0; i < barContainer.children.length; i++) {
+    const child = barContainer.children[i];
+
+    const childTarget = child.getAttribute("req") || `${999999999}`;
+    const target = parseInt(childTarget.replace(/_/g, ""), 10) - amountRaised;
+    const value = Math.min(remaining, target);
+    const width = ((value) / targetUSD) * 100;
+    child.style.width = `${width}%`;
+
+    amountRaised += target;
+    remaining = Math.max(remaining - target, 0);
+  }
 
   document.getElementById("raisedUsd").textContent = numberWithCommas(parseInt(dollars).toFixed(0));
   document.getElementById("targetUsd").textContent =

@@ -272,15 +272,43 @@ video {
   overflow: none;
 }
 
+.barC {
+  animation: grow 2s;
+  clip-path: inset(0px 0px 0px 0px round 9px);
+  width: 100%;
+  overflow: hidden;
+}
+
+@keyframes grow {
+  0% { clip-path: inset(0% 100% 0% 0% round 9px); }
+  100% { clip-path: inset(0% 0% 0% 0% round 9px); }
+}
+
 .bar {
-  transition: width 1s;
-  width: 0%;
+  font-size: 0.8rem;
+  float: left;
+  text-align: right;
+  color: black;
+  line-height: 3rem;
   height: 3rem;
-  border-radius: 9px;
   background: #00d4ff;
   background: -webkit-linear-gradient(top left, #00d4ff, #00ff6f);
   background: -moz-linear-gradient(top left, #00d4ff, #00ff6f);
   background: linear-gradient(to bottom right, #00d4ff, #00ff6f);
+}
+
+.divider {
+  border-right: 2px solid black;
+}
+
+.endCap {
+  border-radius: 0px 9px 9px 0px;
+  border: none;
+}
+
+.label {
+  margin-right: 5px;
+  width: 0px;
 }
 
 /* Video */
