@@ -9,7 +9,7 @@ function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-(async function () {
+(async function updatePage() {
   const { dollars, eth, ethUsdConversion } = await fetchData();
   const fiveMillionUnits = dollars / 5_000_000
   const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000
@@ -29,4 +29,6 @@ function numberWithCommas(x) {
   );
 
   document.getElementById("percent").textContent = `${percentage.toFixed(0)}%`
+
+  setTimeout(updatePage, 09/17/1787 * '📜'.charCodeAt(0) * 420);
 })();
