@@ -149,7 +149,7 @@ a {
 
 .team-group > p {
   text-transform: uppercase;
-  letter-spacing: .125rem;
+  letter-spacing: 0.125rem;
 }
 
 .team-people {
@@ -170,7 +170,7 @@ a {
 
 .person > .info > h1 {
   margin: 0;
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 
 .person > .info > p {
@@ -262,9 +262,14 @@ video {
   color: #116e81;
 }
 
-.progress {
-  margin-top: 1rem;
+.progressContainer {
+  position: relative;
   width: 40%;
+  margin: 3rem 0;
+}
+
+.progress {
+  width: 100%;
   height: 3rem;
   border-radius: 9px;
   box-shadow: inset 0 0 6px 0px #000000b8;
@@ -281,6 +286,56 @@ video {
   background: -webkit-linear-gradient(top left, #00d4ff, #00ff6f);
   background: -moz-linear-gradient(top left, #00d4ff, #00ff6f);
   background: linear-gradient(to bottom right, #00d4ff, #00ff6f);
+}
+
+.milestone {
+  position: absolute;
+  top: -10%;
+  height: 120%;
+  width: 10px;
+  transform: translateX(-50%);
+  background: #00d4ff;
+  background: -webkit-linear-gradient(top left, #00d4ff, #00ff6f);
+  background: -moz-linear-gradient(top left, #00d4ff, #00ff6f);
+  background: linear-gradient(to bottom right, #00d4ff, #00ff6f);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.milestone:after {
+  content: "";
+  position: absolute;
+  padding: 1rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.milestone .tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: bold;
+}
+
+.milestone .tooltip .label {
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.milestone .tooltip.hide {
+  display: none;
+}
+
+.milestone:hover .tooltip {
+  display: block;
 }
 
 /* Video */
