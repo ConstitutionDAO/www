@@ -13,8 +13,7 @@ const milestoneMillions = [14_000_000, 30_000_000];
 
 (async function () {
   const { dollars, eth, ethUsdConversion } = await fetchData();
-  const fiveMillionUnits = dollars / 5_000_000;
-  const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000;
+  const targetUSD = 69_420_000;
 
   const percentage = (dollars / targetUSD) * 100;
 
@@ -46,7 +45,7 @@ const milestoneMillions = [14_000_000, 30_000_000];
     const label = document.createElement("div");
     label.className = "milestone-label";
     label.style.left = percentage * 100 + "%";
-    label.innerText = "Milestone " + (i + 1);
+    label.innerText = "Goal " + (i + 1);
 
     document.getElementById("progress").appendChild(marker);
     document.getElementById("progress").appendChild(label);
