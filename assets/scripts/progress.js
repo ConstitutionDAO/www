@@ -11,10 +11,10 @@ function numberWithCommas(x) {
 
 (async function () {
   const { dollars, eth, ethUsdConversion } = await fetchData();
-  const fiveMillionUnits = dollars / 5_000_000
-  const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000
-  const qualificationGoal = 14_000_000
-  const competitiveGoal = 30_000_000
+  const fiveMillionUnits = dollars / 5_000_000;
+  const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000;
+  const qualificationGoal = 14_000_000;
+  const competitiveGoal = 30_000_000;
 
   const goalPercentage = (dollars / targetUSD) * 100;
   const qualificationPercentage = (qualificationGoal / targetUSD) * 100;
@@ -32,11 +32,11 @@ function numberWithCommas(x) {
     (targetUSD / parseInt(ethUsdConversion)).toFixed(3)
   );
 
-  document.getElementById("percent").textContent = `${goalPercentage.toFixed(0)}%`
+  document.getElementById("percent").textContent = `${goalPercentage.toFixed(0)}%`;
 
-  console.log(qualificationPercentage, competitivePercentage)
-  document.getElementById("qualificationGoal").style.left = `${qualificationPercentage.toFixed(0)}%`
-  document.getElementById("qualificationGoal").style.display = "block"
-  document.getElementById("competitiveGoal").style.left = `${competitivePercentage.toFixed(0)}%`
-  document.getElementById("competitiveGoal").style.display = "block" 
+  console.log(qualificationPercentage, competitivePercentage);
+  document.getElementById("qualificationGoal").style.left = `${qualificationPercentage.toFixed(0)}%`;
+  document.getElementById("qualificationGoal").style.display = "block";
+  document.getElementById("competitiveGoal").style.left = `${competitivePercentage.toFixed(0)}%`;
+  document.getElementById("competitiveGoal").style.display = "block";
 })();
