@@ -11,8 +11,7 @@ function numberWithCommas(x) {
 
 (async function () {
   const { dollars, eth, ethUsdConversion } = await fetchData();
-  const fiveMillionUnits = dollars / 5_000_000
-  const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000
+  const targetUSD = 69_420_000;
 
   const percentage = (dollars / targetUSD) * 100;
 
