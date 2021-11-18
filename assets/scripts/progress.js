@@ -30,5 +30,5 @@ function numberWithCommas(x) {
 
   document.getElementById("percent").textContent = `${percentage.toFixed(0)}%`
 
-  setTimeout(updatePage, 09/17/1787 * '📜'.charCodeAt(0) * 420);
+  setTimeout(updatePage, 09/17/1787 * '📜'.charCodeAt(0) * 420.69);
 })();
