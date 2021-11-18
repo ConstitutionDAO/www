@@ -10,8 +10,8 @@ function numberWithCommas(x) {
 }
 
 const flags = [
-  { title: 'Qualification goal', amount: 14_000_000},
-  { title: 'Competitive goal', amount: 30_000_000},
+  { title: 'Qualification ($14MM)', amount: 14_000_000},
+  { title: 'Competitive Bid ($30MM)', amount: 30_000_000},
 ];
 
 (async function () {

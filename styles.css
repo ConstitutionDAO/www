@@ -296,8 +296,11 @@ video {
   font-size: 0.75rem;
   color: white;
   margin: 0;
-  margin-right: 6px;
+  padding-right: 6px;
   text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Video */
