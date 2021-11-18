@@ -264,6 +264,8 @@ video {
 
 .progress {
   margin-top: 1rem;
+  position: relative;
+
   width: 40%;
   height: 3rem;
   border-radius: 9px;
@@ -274,6 +276,7 @@ video {
 
 .bar {
   transition: width 1s;
+  position: absolute;
   width: 0%;
   height: 3rem;
   border-radius: 9px;
@@ -281,6 +284,31 @@ video {
   background: -webkit-linear-gradient(top left, #00d4ff, #00ff6f);
   background: -moz-linear-gradient(top left, #00d4ff, #00ff6f);
   background: linear-gradient(to bottom right, #00d4ff, #00ff6f);
+}
+
+.marker-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.marker-list .marker {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  font-size: 2rem;
+  letter-spacing: -0.75rem;
+}
+
+/*Not sure how to get the vibe of "half way there" right */
+#Marker14 {
+  font-size: 2rem;
 }
 
 /* Video */

@@ -11,12 +11,14 @@ function numberWithCommas(x) {
 
 (async function () {
   const { dollars, eth, ethUsdConversion } = await fetchData();
-  const fiveMillionUnits = dollars / 5_000_000
-  const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000
+  const distanceUSD = 5000000;  //Goal will always be out between (set value) and (set value + 1 million)
+  const targetUSD = Math.floor((parseInt(dollars) + distanceUSD) / 1000000) * 1000000;
 
-  const percentage = (dollars / targetUSD) * 100;
+  const percentage = (parseInt(dollars) / targetUSD) * 100;
 
   document.getElementById("bar").style.width = `${percentage}%`;
+  document.getElementById("Marker14").style.left = `${100 * (14000000 / targetUSD)}%`;
+  document.getElementById("Marker30").style.left = `${100 * (30000000 / targetUSD)}%`;
 
   document.getElementById("raisedUsd").textContent = numberWithCommas(parseInt(dollars).toFixed(0));
   document.getElementById("targetUsd").textContent =
