@@ -373,17 +373,6 @@ video {
 }
 
 @media only screen and (max-width: 800px) {
-  #Marker14:hover + #tips14 {
-    visibility: hidden;
-  }
-  
-  #Marker30:hover + #tips30 {  
-    visibility: hidden;
-  }
-  
-  #MarkerInfinity:hover + #tipsInfinity {  
-    visibility: hidden;
-  }
   
   .web-only {
     display: none;
