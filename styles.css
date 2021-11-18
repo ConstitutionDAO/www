@@ -270,6 +270,7 @@ video {
   box-shadow: inset 0 0 6px 0px #000000b8;
   background-color: #161616;
   overflow: none;
+  position: relative;
 }
 
 .bar {
@@ -281,6 +282,55 @@ video {
   background: -webkit-linear-gradient(top left, #00d4ff, #00ff6f);
   background: -moz-linear-gradient(top left, #00d4ff, #00ff6f);
   background: linear-gradient(to bottom right, #00d4ff, #00ff6f);
+  position: absolute;
+}
+
+#bar1{
+  z-index: 3;
+  background: #00ff6f;
+}
+
+#bar2 {
+  z-index: 2;
+  background: #00d4ff; 
+}
+
+#bar3 {
+  z-index: 1;
+  background: #635bff;
+}
+
+.progress-labels {
+  width: 40%;
+  height: 1.5rem;
+  margin-bottom: 60px;
+  position: relative; 
+}
+
+.progress-label {
+  position: absolute;
+  width: fit-content;
+  transform: translateX(-50%);
+  top: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.progress-label > h3, .progress-label > div > h3 {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+#p-label1-amount, #p-label2-amount, #p-label3-amount, #p-label1-icon, #p-label2-icon{
+  color: #00ff6f;
+}
+
+#p-label3-icon {
+  color: #00d4ff;
+}
+
+#p-label1-header-mobile, #p-label1-icon, #p-label2-header-mobile, #p-label2-icon, #p-label3-header-mobile, #p-label3-icon {
+  display: none;
 }
 
 /* Video */
@@ -304,7 +354,7 @@ video {
   margin: 1rem 0 1rem 0;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .web-only {
     display: none;
   }
@@ -319,7 +369,7 @@ video {
   }
 
   .progress {
-    width: 70%;
+    width: 80%;
   }
   .scroll-scroll {
     font-size: 6rem;
@@ -343,5 +393,33 @@ video {
 
   .person > .twitter {
     width: 100%;
+  }
+
+  .progress-labels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: left !important;
+  }
+
+  .progress-label {
+    position: relative;
+    left: 0 !important;
+    transform: translateX(0) !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #p-label1-header-web, #p-label1-amount, #p-label2-header-web, #p-label2-amount, #p-label3-header-web, #p-label3-amount {
+    display: none;
+  }
+
+  #p-label1-header-mobile, #p-label1-icon, #p-label2-header-mobile, #p-label2-icon, #p-label3-header-mobile, #p-label3-icon {
+    display: inherit;
   }
 }

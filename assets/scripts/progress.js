@@ -11,12 +11,17 @@ function numberWithCommas(x) {
 
 (async function () {
   const { dollars, eth, ethUsdConversion } = await fetchData();
-  const fiveMillionUnits = dollars / 5_000_000
-  const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000
+  const targetUSD = 69420000
 
   const percentage = (dollars / targetUSD) * 100;
 
-  document.getElementById("bar").style.width = `${percentage}%`;
+  document.getElementById("bar1").style.width = `${(14000000/targetUSD) * 100}%`
+  document.getElementById("bar2").style.width = `${(30000000/targetUSD) * 100}%`
+  document.getElementById("bar3").style.width = `${percentage}%`;
+
+  document.getElementById("p-label1").style.left = `${(14000000/targetUSD) * 100}%`
+  document.getElementById("p-label2").style.left = `${(30000000/targetUSD) * 100}%`
+  document.getElementById("p-label3").style.left = `100%`;
 
   document.getElementById("raisedUsd").textContent = numberWithCommas(parseInt(dollars).toFixed(0));
   document.getElementById("targetUsd").textContent =
@@ -28,5 +33,6 @@ function numberWithCommas(x) {
     (targetUSD / parseInt(ethUsdConversion)).toFixed(3)
   );
 
-  document.getElementById("percent").textContent = `${percentage.toFixed(0)}%`
+  
+  document.getElementById("percent").textContent = `${percentage.toFixed(0)}% of stretch`
 })();
