@@ -318,39 +318,6 @@ video {
 #tipsInfinity {
   visibility: hidden;
 }
-/*Not sure how to get the vibe of "half way there" right */
-#Marker14:hover + #tips14 {
-  visibility: visible;
-  position: absolute;
-  bottom: -4.5rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center; /** Y-axis align **/
-  justify-content: center; /** X-axis align **/
-}
-
-#Marker30:hover + #tips30 {
-  visibility: visible;
-  position: absolute;
-  bottom: -4.5rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center; /** Y-axis align **/
-  justify-content: center; /** X-axis align **/
-}
-
-#MarkerInfinity:hover + #tipsInfinity {
-  visibility: visible;
-  position: absolute;
-  bottom: -4.5rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center; /** Y-axis align **/
-  justify-content: center; /** X-axis align **/
-}
 /* Video */
 
 .video {
@@ -373,6 +340,39 @@ video {
 }
 
 @media only screen and (max-width: 800px) {
+  #Marker14:hover + #tips14 {
+    visibility: visible;
+    position: absolute;
+    bottom: -4.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
+  }
+  
+  #Marker30:hover + #tips30 {
+    visibility: visible;
+    position: absolute;
+    bottom: -4.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
+  }
+  
+  #MarkerInfinity:hover + #tipsInfinity {
+    visibility: visible;
+    position: absolute;
+    bottom: -4.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; /** Y-axis align **/
+    justify-content: center; /** X-axis align **/
+  }
+  
   .web-only {
     display: none;
   }
