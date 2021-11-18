@@ -270,6 +270,8 @@ video {
   box-shadow: inset 0 0 6px 0px #000000b8;
   background-color: #161616;
   overflow: none;
+  position: relative;
+  margin-bottom: 4.5em;
 }
 
 .bar {
@@ -281,6 +283,27 @@ video {
   background: -webkit-linear-gradient(top left, #00d4ff, #00ff6f);
   background: -moz-linear-gradient(top left, #00d4ff, #00ff6f);
   background: linear-gradient(to bottom right, #00d4ff, #00ff6f);
+}
+
+.marker {
+  position: absolute;
+  width: 4px;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.66);
+  box-shadow: 0 0 12px #fff;
+  transition: transform 0.25s;
+  display: none;
+}
+
+.markerText {
+  font-weight: 600;
+  text-align: center;
+  position: absolute;
+  top: 5em;
+  text-shadow: 0 0 1px white;
+  opacity: 0.75;
+  left: -3em;
+  font-size: 12px;  
 }
 
 /* Video */
