@@ -309,47 +309,53 @@ video {
 
 #tips14 {
   visibility: hidden;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  margin-top: 3rem;
+  align-items: center; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+  margin: 0px;
 }
 
 #tips30 {
   visibility: hidden;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  margin-top: 3rem;
+  align-items: center; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+  margin: 0px;
 }
 
 #tipsInfinity {
   visibility: hidden;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  margin-top: 3rem;
+  align-items: center; /** Y-axis align **/
+  justify-content: center; /** X-axis align **/
+  margin: 0px;
 }
 
 #Marker14:hover + #tips14 {
   visibility: visible;
-  position: absolute;
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 3rem;
-  align-items: center; /** Y-axis align **/
-  justify-content: center; /** X-axis align **/
+  margin-top: 3.5rem;
 }
 
 #Marker30:hover + #tips30 {
   visibility: visible;
-  position: absolute;
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 3rem;
-  align-items: center; /** Y-axis align **/
-  justify-content: center; /** X-axis align **/
+  margin-top: 3.5rem;
 }
 
 #MarkerInfinity:hover + #tipsInfinity {
   visibility: visible;
-  position: absolute;
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 3rem;
-  align-items: center; /** Y-axis align **/
-  justify-content: center; /** X-axis align **/
+  margin-top: 3.5rem;
 }
 /* Video */
 
