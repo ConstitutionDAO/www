@@ -12,11 +12,12 @@ function numberWithCommas(x) {
 (async function () {
   const { dollars, eth, ethUsdConversion } = await fetchData();
   const fiveMillionUnits = dollars / 5_000_000
-  const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000
+  const initialTargetUSD = 20000000
+  const targetUSD = initialTargetUSD
 
   const percentage = (dollars / targetUSD) * 100;
 
-  document.getElementById("bar").style.width = `${percentage}%`;
+  document.getElementById("bar").style.width = '100%';
 
   document.getElementById("raisedUsd").textContent = numberWithCommas(parseInt(dollars).toFixed(0));
   document.getElementById("targetUsd").textContent =
