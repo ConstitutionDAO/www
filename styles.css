@@ -198,7 +198,7 @@ h2 {
 .dollars {
   font-size: 3em;
   margin: 0;
-  margin-top: 2.5rem;
+  margin-top: 3.5rem;
   margin-bottom: 0.5rem;
   color: #00ff6f;
   /* text-shadow: 0 0 9px #0000008f; */
@@ -303,7 +303,7 @@ video {
   top: 0;
   height: 100%;
   font-size: 2rem;
-  letter-spacing: -0.75rem;
+  letter-spacing: rem;
   text-decoration: none;
 }
 
@@ -322,9 +322,10 @@ video {
 #Marker14:hover + #tips14 {
   visibility: visible;
   position: absolute;
-  width: 100%;
-  height: 100%;
   display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
   align-items: center; /** Y-axis align **/
   justify-content: center; /** X-axis align **/
 }
@@ -332,10 +333,10 @@ video {
 #Marker30:hover + #tips30 {
   visibility: visible;
   position: absolute;
-  bottom: -4.5rem;
-  width: 100%;
-  height: 100%;
   display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
   align-items: center; /** Y-axis align **/
   justify-content: center; /** X-axis align **/
 }
@@ -343,10 +344,10 @@ video {
 #MarkerInfinity:hover + #tipsInfinity {
   visibility: visible;
   position: absolute;
-  bottom: -4.5rem;
-  width: 100%;
-  height: 100%;
   display: flex;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
   align-items: center; /** Y-axis align **/
   justify-content: center; /** X-axis align **/
 }
