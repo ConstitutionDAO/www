@@ -11,7 +11,9 @@ function numberWithCommas(x) {
 
 (async function () {
   const { dollars, eth, ethUsdConversion } = await fetchData();
-  const targetUSD = 69_420_000;
+  const fiveMillionUnits = dollars / 5_000_000;
+  const targetUSD = Math.ceil(fiveMillionUnits) * 5_000_000;
+
   const milestones = [
     [14_000_000, "Qualification Goal", true],
     [30_000_000, "Competitive Goal", false],
@@ -19,6 +21,7 @@ function numberWithCommas(x) {
   ];
 
   milestones.forEach(([value, text, hide]) => {
+    if (value > targetUSD) return;
     const milestone = document.createElement("div");
     milestone.innerHTML = `
     <div class="tooltip ${hide ? "hide" : ""}">
