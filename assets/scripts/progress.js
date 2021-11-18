@@ -5,6 +5,14 @@ async function fetchData() {
   return content;
 }
 
+function showDetails(id) {
+  document.getElementById(id).style.display = 'block';
+}
+
+function hideDetails(id) {
+  document.getElementById(id).style.display = 'none';
+}  
+
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -18,7 +26,7 @@ function numberWithCommas(x) {
 
   let remaining = dollars;
   let amountRaised = 0;
-  const barContainer = document.getElementById('barC');
+  const barContainer = document.getElementById('barContainer');
   for (let i = 0; i < barContainer.children.length; i++) {
     const child = barContainer.children[i];
 

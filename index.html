@@ -54,22 +54,25 @@
 
       <h1 class="percent" id="percent">...%</h1>
       <div class="progress">
-        <div class="barC" id="barC">
-          <div class="bar" id="barQualify" req="14_000_000">
+        <div class="barContainer" id="barContainer">
+          <div class="bar" id="barQualify" req="14_000_000" onmouseover="showDetails('d1')" onmouseout="hideDetails('d1')">
             <div class="divider">
-              <span class="label">Qualify</span>
+              <span class="label">✅</span>
             </div>
           </div>
-          <div class="bar" id="barCompetitive" req="30_000_000">
+          <div class="bar" id="barCompetitive" req="30_000_000" onmouseover="showDetails('d2')" onmouseout="hideDetails('d2')">
             <div class="divider">
-              <span class="label">Compete</span>
+              <span class="label">🌟</span>
             </div>
           </div>
-          <div class="bar endCap" id="barGravy">
-            <span class="label"></span>
+          <div class="bar endCap" id="barGravy" onmouseover="showDetails('d3')" onmouseout="hideDetails('d3')">
+            <span class="label">🤯</span>
           </div>
         </div>
       </div>
+      <div class="details" id="d1">We reached the minimum to bid!</div>
+      <div class="details" id="d2">Our bid is pretty competitive now!</div>
+      <div class="details" id="d3">🎉 WAGBTC 🎉</div>
       <h1 class="dollars">
         $<span id="raisedUsd">...</span>
         <span class="dollarDenom">/ $<span id="targetUsd">...</span></span>

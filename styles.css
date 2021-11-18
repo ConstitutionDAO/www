@@ -272,7 +272,7 @@ video {
   overflow: none;
 }
 
-.barC {
+.barContainer {
   animation: grow 2s;
   clip-path: inset(0px 0px 0px 0px round 9px);
   width: 100%;
@@ -309,6 +309,13 @@ video {
 .label {
   margin-right: 5px;
   width: 0px;
+}
+
+.details {
+  display: none;
+  text-align: center;
+  color: white;
+  padding: 1rem;
 }
 
 /* Video */
