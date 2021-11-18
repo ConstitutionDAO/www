@@ -36,6 +36,10 @@ body {
   text-align: center;
 }
 
+.funded {
+  font-size: 18px;
+}
+
 .cta-link {
   margin-top: 20px;
   border-radius: 10px;
