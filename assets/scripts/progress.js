@@ -20,6 +20,39 @@ function numberWithCommas(x) {
   document.getElementById("Marker14").style.left = `${100 * (14000000 / targetUSD)}%`;
   document.getElementById("Marker30").style.left = `${100 * (30000000 / targetUSD)}%`;
 
+
+
+
+  const element30 = document.querySelector('#Marker30')
+  console.log(getComputedStyle(element30));
+
+  function getPositionAtCenter(element) {
+    const {top, left, width, height} = element.getBoundingClientRect();
+    return {
+      x: left + width / 2,
+      y: top + height / 2
+    };
+  }
+ 
+ function getDistanceBetweenElements(a, b) {
+   const aPosition = getPositionAtCenter(a);
+   const bPosition = getPositionAtCenter(b);
+ 
+   return Math.hypot(aPosition.x - bPosition.x, aPosition.y - bPosition.y);  
+ }
+ 
+ const distance = getDistanceBetweenElements(
+   document.getElementById("Marker30"),
+   document.getElementById("MarkerInfinity")
+ );
+
+  console.log(distance);
+
+
+  if(distance < 50){
+    document.getElementById("Marker30").style.visibility = "hidden";
+  }
+
   document.getElementById("raisedUsd").textContent = numberWithCommas(parseInt(dollars).toFixed(0));
   document.getElementById("targetUsd").textContent =
     numberWithCommas(targetUSD);
