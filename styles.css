@@ -325,7 +325,7 @@ video {
 
 .scroll-scroll {
   font-weight: bold;
-  font-size: 10rem;
+  font-size: 6rem;
   margin: 1rem 0 1rem 0;
 }
 
@@ -369,4 +369,20 @@ video {
   .person > .twitter {
     width: 100%;
   }
+}
+
+
+.refund {
+  line-height: 1.5;
+}
+
+.refund a {
+  display: block;
+  max-width: 24rem;
+  width: 100%;
+  margin: auto;
+}
+
+.refund p {
+  font-size: 1.25rem;
 }
