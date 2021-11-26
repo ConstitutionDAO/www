@@ -42,7 +42,6 @@ body {
 }
 
 .cta-link {
-  margin-top: 20px;
   border-radius: 10px;
   font-size: 20px;
   font-family: GTAmerica;
@@ -58,6 +57,20 @@ body {
   border: 0;
 }
 
+.refund-button {
+    max-width: 24rem;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.refund-button a {
+  display: block;
+}
+
+.available {
+  margin-bottom: 2rem;
+}
 .button-row {
   display: flex;
   flex-flow: row;
@@ -329,9 +342,49 @@ video {
   margin: 1rem 0 1rem 0;
 }
 
+.options {
+  display: grid;
+  max-width: 64rem;
+  width: 100%;
+  margin: auto;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 1rem;
+}
+
+.option {
+  padding: 1.5rem;
+  background-color: #161616;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+.option h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.option p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  height: 8rem;
+}
+
+.option h2 {
+  margin-bottom: .5rem;
+}
+
+.loom {
+  border-radius: 5px;
+}
 @media only screen and (max-width: 800px) {
   .web-only {
     display: none;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
   }
 
   .dollars {
@@ -374,13 +427,6 @@ video {
 
 .refund {
   line-height: 1.5;
-}
-
-.refund a {
-  display: block;
-  max-width: 24rem;
-  width: 100%;
-  margin: auto;
 }
 
 .refund p {
